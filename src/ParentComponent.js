@@ -14,8 +14,8 @@ class ParentComponent extends Component {
     }
  greetParent(str){
     //alert(str)
-    console.log("hello")
-    alert("parent method called")
+    console.log("hello",str)
+    // alert("parent method called")
  }
  componentDidMount(){
     setInterval(()=>{
@@ -26,9 +26,9 @@ class ParentComponent extends Component {
         return (
             <div>
              
-                {/* <ChildComponent greetHandler={this.greetParent} name="ravi"></ChildComponent> */}
-               <MemoComp></MemoComp>
-                <RegularComponent></RegularComponent>
+                <ChildComponent greetHandler={this.greetParent} name="ravi"></ChildComponent>
+               {/* <MemoComp></MemoComp>
+                <RegularComponent></RegularComponent> */}
             </div>
         );
     }
