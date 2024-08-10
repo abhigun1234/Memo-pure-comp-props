@@ -12,7 +12,7 @@ class ParentComponent extends Component {
         this.state={parentName:'parent'}
         this.greetParent=this.greetParent.bind(this)
     }
- greetParent(){
+ greetParent(str){
     //alert(str)
     console.log("hello")
     alert("parent method called")
@@ -25,13 +25,10 @@ class ParentComponent extends Component {
     render() {
         return (
             <div>
-                {/* <ChildComponent greetHandler={this.greetParent}></ChildComponent> */}
-                {/* <Pure></Pure>
-                <RegularComponent></RegularComponent> */}
-                {/* <RegularFunctionComp></RegularFunctionComp>
-                <MemoCompDemo></MemoCompDemo> */}
-                {/* <MemoComp></MemoComp>  */}
-                <ChildComponent greetHandler={this.greetParent} name="ravi"></ChildComponent>
+             
+                {/* <ChildComponent greetHandler={this.greetParent} name="ravi"></ChildComponent> */}
+               <MemoComp></MemoComp>
+                <RegularComponent></RegularComponent>
             </div>
         );
     }

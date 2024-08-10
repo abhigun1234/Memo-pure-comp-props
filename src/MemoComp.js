@@ -9,4 +9,5 @@ function MemoComp(props) {
     );
 }
 
-export default React.memo(MemoComp) ;
+// export default React.memo(MemoComp) ;
+export default React.memo (MemoComp) ;

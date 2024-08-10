@@ -4,7 +4,7 @@ function ChildComponent(props) {
     console.log("props data",props)
     return (
         <div>
-            <button onClick={props.greetHandler}>click</button>
+            <button onClick={props.greetHandler("daata")}>click</button>
         </div>
     );
 }
