@@ -3,6 +3,8 @@ import './App.css';
 import ParentComponent from './ParentComponent';
 import Fragments from './Fragments';
 import DemoFragment from './DemoFragment';
+import PostData from './PostData';
+import Post from './Post';
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       {/* <ParentComponent></ParentComponent> */}
       {/* <Fragments></Fragments> */}
       {/* <DemoFragment></DemoFragment> */}
-      <ParentComponent></ParentComponent>
+      {/* <ParentComponent></ParentComponent> */}
+      <PostData></PostData>
+      {/* <Post></Post> */}
     </div>
   );
 }
